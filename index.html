@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grand Harbor - Luxury Hotel & Restaurant</title>
+  <meta name="description" content="Experience luxury, fine dining, and coastal views at Grand Harbor Hotel & Restaurant." />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://img.icons8.com/fluency/96/000000/hotel.png" />
+  
+  <!-- AOS Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="https://img.icons8.com/fluency/96/000000/restaurant.png" />
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header" id="header">
+    <div class="container navbar">
+      <a href="index.html" class="brand">
+        <i class="fas fa-anchor"></i> GRAND HARBOR
+      </a>
+      
+      <!-- Hamburger Menu Button -->
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <nav class="nav-links">
+        <a href="index.html" class="active"><i class="fas fa-home"></i> Home</a>
+        <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
+        <a href="rooms.html"><i class="fas fa-bed"></i> Rooms</a>
+        <a href="dining.html"><i class="fas fa-utensils"></i> Dining</a>
+        <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== NAV OVERLAY (for closing menu) ===== -->
+  <div class="nav-overlay"></div>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content" data-aos="fade-up" data-aos-duration="1200">
+      <div class="hero-badge">
+        <i class="fas fa-star"></i> Award-Winning Luxury
+      </div>
+      <h1>Stay Vibrant,<br />Dine Brilliant.</h1>
+      <p>Colorful escapes, joyful plates, and warm hospitality come together for an unforgettable coastal experience.</p>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <span class="hero-stat-number">4.9</span>
+          <span class="hero-stat-label">Guest Rating</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-number">120+</span>
+          <span class="hero-stat-label">Luxury Rooms</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-number">24/7</span>
+          <span class="hero-stat-label">Concierge</span>
+        </div>
+      </div>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="contact.html">
+          <i class="fas fa-calendar-check"></i> Book Your Stay
+        </a>
+        <a class="btn btn-secondary" href="dining.html">
+          <i class="fas fa-utensil-spoon"></i> Explore Dining
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FEATURES SECTION ===== -->
+  <section class="section features-section">
+    <div class="container">
+      <div class="section-head" data-aos="fade-up">
+        <span class="section-tag">Why Choose Us</span>
+        <h2 class="section-title">Where Luxury Meets the Coast</h2>
+        <p class="section-subtitle">Every detail at Grand Harbor is crafted to make your stay extraordinary.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="feature-icon"><i class="fas fa-spa"></i></div>
+          <h3>Ocean Spa & Wellness</h3>
+          <p>Rejuvenate with our signature treatments overlooking the sparkling bay.</p>
+        </div>
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="feature-icon"><i class="fas fa-wine-glass-alt"></i></div>
+          <h3>Curated Wine Cellar</h3>
+          <p>Explore our selection of world-class wines paired with coastal cuisine.</p>
+        </div>
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="feature-icon"><i class="fas fa-swimmer"></i></div>
+          <h3>Infinity Pool</h3>
+          <p>Take a dip in our breathtaking infinity pool with panoramic ocean views.</p>
+        </div>
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="feature-icon"><i class="fas fa-concierge-bell"></i></div>
+          <h3>Personal Butler Service</h3>
+          <p>Dedicated butler service to cater to your every need and desire.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ROOMS PREVIEW ===== -->
+  <section class="section rooms-preview" style="background: var(--surface-2);">
+    <div class="container">
+      <div class="section-head" data-aos="fade-up">
+        <span class="section-tag">Accommodations</span>
+        <h2 class="section-title">Signature Suites</h2>
+        <p class="section-subtitle">Designed for comfort, elegance, and unforgettable views.</p>
+      </div>
+      <div class="card-grid">
+        <article class="card room-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="room-image-wrapper">
+            <img class="room-image" src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1000&q=80" alt="Ocean View Suite" loading="lazy" />
+            <span class="room-badge">Popular</span>
+          </div>
+          <h3>Ocean View Suite</h3>
+          <p>Floor-to-ceiling views, private balcony, and a spa-inspired bath.</p>
+          <div class="amenities">
+            <span><i class="fas fa-bed"></i> King</span>
+            <span><i class="fas fa-wind"></i> Balcony</span>
+            <span><i class="fas fa-coffee"></i> Breakfast</span>
+          </div>
+          <div class="room-price">From <strong>$299</strong> / night</div>
+          <a class="btn btn-primary btn-sm" href="contact.html">Book Now</a>
+        </article>
+
+        <article class="card room-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="room-image-wrapper">
+            <img class="room-image" src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1000&q=80" alt="Executive Deluxe" loading="lazy" />
+            <span class="room-badge">Business</span>
+          </div>
+          <h3>Executive Deluxe</h3>
+          <p>Designed for business and leisure with premium amenities and workspace.</p>
+          <div class="amenities">
+            <span><i class="fas fa-wifi"></i> Fast Wi-Fi</span>
+            <span><i class="fas fa-laptop"></i> Workspace</span>
+            <span><i class="fas fa-city"></i> City View</span>
+          </div>
+          <div class="room-price">From <strong>$249</strong> / night</div>
+          <a class="btn btn-primary btn-sm" href="contact.html">Book Now</a>
+        </article>
+
+        <article class="card room-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="room-image-wrapper">
+            <img class="room-image" src="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1000&q=80" alt="Family Residence" loading="lazy" />
+            <span class="room-badge">Family</span>
+          </div>
+          <h3>Family Residence</h3>
+          <p>Spacious rooms with lounge space, plush bedding, and family-friendly comfort.</p>
+          <div class="amenities">
+            <span><i class="fas fa-door-open"></i> 2 Bedrooms</span>
+            <span><i class="fas fa-couch"></i> Living Area</span>
+            <span><i class="fas fa-child"></i> Kids Welcome</span>
+          </div>
+          <div class="room-price">From <strong>$349</strong> / night</div>
+          <a class="btn btn-primary btn-sm" href="contact.html">Book Now</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DINING PREVIEW ===== -->
+  <section class="section dining-preview">
+    <div class="container">
+      <div class="section-head" data-aos="fade-up">
+        <span class="section-tag">Culinary Excellence</span>
+        <h2 class="section-title">A Taste of the Coast</h2>
+        <p class="section-subtitle">Seasonal menus crafted from the freshest local ingredients.</p>
+      </div>
+      <div class="dining-grid">
+        <div class="dining-card" data-aos="fade-right">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80" alt="Breakfast" loading="lazy" />
+          <div class="dining-card-content">
+            <h3>Sunrise Breakfast</h3>
+            <p>Fresh pastries, seasonal fruit, and made-to-order omelettes.</p>
+            <span class="dining-time"><i class="far fa-clock"></i> 6:30 AM – 10:30 AM</span>
+          </div>
+        </div>
+        <div class="dining-card" data-aos="fade-up">
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80" alt="Lunch" loading="lazy" />
+          <div class="dining-card-content">
+            <h3>Coastal Lunch</h3>
+            <p>Seafood specialties, fresh salads, and light Mediterranean dishes.</p>
+            <span class="dining-time"><i class="far fa-clock"></i> 11:30 AM – 2:30 PM</span>
+          </div>
+        </div>
+        <div class="dining-card" data-aos="fade-left">
+          <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=800&q=80" alt="Dinner" loading="lazy" />
+          <div class="dining-card-content">
+            <h3>Sunset Dinner</h3>
+            <p>Chef's tasting journey, grilled lobster, and signature steak.</p>
+            <span class="dining-time"><i class="far fa-clock"></i> 5:30 PM – 10:00 PM</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="section testimonials" style="background: var(--accent-dark); color: white;">
+    <div class="container">
+      <div class="section-head" data-aos="fade-up">
+        <span class="section-tag" style="color: rgba(255,255,255,0.7);">Guest Stories</span>
+        <h2 class="section-title" style="color: white;">What Our Guests Say</h2>
+      </div>
+      <div class="testimonial-grid">
+        <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+          <p>"An absolute dream! The ocean views, the service, the food — everything was perfect."</p>
+          <div class="testimonial-author">
+            <strong>Sarah Mitchell</strong>
+            <span>Traveler from UK</span>
+          </div>
+        </div>
+        <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+          <p>"The best hotel experience we've ever had. The staff went above and beyond for our anniversary."</p>
+          <div class="testimonial-author">
+            <strong>James & Maria</strong>
+            <span>Honeymooners</span>
+          </div>
+        </div>
+        <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+          <p>"Incredible dining and a stunning infinity pool. We didn't want to leave!"</p>
+          <div class="testimonial-author">
+            <strong>David Chen</strong>
+            <span>Business Traveler</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA SECTION ===== -->
+  <section class="section cta-section">
+    <div class="container cta-box" data-aos="zoom-in">
+      <h2>Ready for Your Coastal Escape?</h2>
+      <p>Book now and enjoy exclusive offers on your dream vacation.</p>
+      <a class="btn btn-primary btn-lg" href="contact.html">
+        <i class="fas fa-calendar-check"></i> Plan Your Stay
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4><i class="fas fa-anchor"></i> GRAND HARBOR</h4>
+          <p>Where luxury meets the coast. Experience the finest in hospitality, dining, and relaxation.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Quick Links</h5>
+          <a href="rooms.html">Rooms</a>
+          <a href="dining.html">Dining</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h5>Contact Info</h5>
+          <p><i class="fas fa-map-marker-alt"></i> 88 Harbor Avenue, Seabrook Bay</p>
+          <p><i class="fas fa-phone"></i> +1 (555) 014-2876</p>
+          <p><i class="fas fa-envelope"></i> reservations@grandharbor.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> Grand Harbor Hotel & Restaurant. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== BACK TO TOP BUTTON ===== -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- ===== SCRIPTS ===== -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dining | Grand Harbor</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="https://img.icons8.com/fluency/96/000000/restaurant.png" />
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="brand"><i class="fas fa-anchor"></i> GRAND HARBOR</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav-links">
+        <a href="index.html"><i class="fas fa-home"></i> Home</a>
+        <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
+        <a href="rooms.html"><i class="fas fa-bed"></i> Rooms</a>
+        <a href="dining.html" class="active"><i class="fas fa-utensils"></i> Dining</a>
+        <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== NAV OVERLAY ===== -->
+  <div class="nav-overlay"></div>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main>
+    <section class="section dining-hero">
+      <div class="container">
+        <div class="section-head" data-aos="fade-up" data-aos-duration="800">
+          <span class="section-tag">Culinary Journey</span>
+          <h1 class="section-title">Colorful Plates, Coastal Nights</h1>
+          <p class="section-subtitle">Enjoy playful menus made from fresh local ingredients and served with a warm smile.</p>
+        </div>
+
+        <div class="dining-gallery" style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1.5rem; margin-top: 2rem;">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80" alt="Restaurant interior" style="border-radius: 20px; height: 200px; object-fit: cover;" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100" />
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80" alt="Dining table" style="border-radius: 20px; height: 200px; object-fit: cover;" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200" />
+          <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=800&q=80" alt="Chef plating" style="border-radius: 20px; height: 200px; object-fit: cover;" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300" />
+        </div>
+
+        <div class="menu-tabs" data-aos="fade-up" data-aos-duration="600">
+          <button class="tab-btn active" data-target="breakfast"><i class="fas fa-sun"></i> Breakfast</button>
+          <button class="tab-btn" data-target="lunch"><i class="fas fa-cloud-sun"></i> Lunch</button>
+          <button class="tab-btn" data-target="dinner"><i class="fas fa-moon"></i> Dinner</button>
+        </div>
+
+        <div id="breakfast" class="menu-panel active" data-aos="fade-up" data-aos-duration="600">
+          <div class="menu-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+            <div class="menu-item"><span>Ocean Breeze Breakfast</span><span class="price">$24</span></div>
+            <div class="menu-item"><span>Fresh Pastries & Seasonal Fruit</span><span class="price">$14</span></div>
+            <div class="menu-item"><span>Made-to-Order Omelette</span><span class="price">$18</span></div>
+            <div class="menu-item"><span>Avocado Toast with Poached Egg</span><span class="price">$16</span></div>
+          </div>
+        </div>
+
+        <div id="lunch" class="menu-panel" data-aos="fade-up" data-aos-duration="600">
+          <div class="menu-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+            <div class="menu-item"><span>Seared Salmon Salad</span><span class="price">$22</span></div>
+            <div class="menu-item"><span>Truffle Mushroom Flatbread</span><span class="price">$19</span></div>
+            <div class="menu-item"><span>Local Clam Chowder</span><span class="price">$16</span></div>
+            <div class="menu-item"><span>Grilled Fish Tacos</span><span class="price">$18</span></div>
+          </div>
+        </div>
+
+        <div id="dinner" class="menu-panel" data-aos="fade-up" data-aos-duration="600">
+          <div class="menu-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+            <div class="menu-item"><span>Chef's Tasting Journey</span><span class="price">$68</span></div>
+            <div class="menu-item"><span>Grilled Lobster Tail</span><span class="price">$46</span></div>
+            <div class="menu-item"><span>Signature Steak with Herb Jus</span><span class="price">$44</span></div>
+            <div class="menu-item"><span>Seafood Paella</span><span class="price">$38</span></div>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 2.5rem;" data-aos="fade-up" data-aos-duration="600">
+          <a class="btn btn-primary btn-lg" href="contact.html"><i class="fas fa-calendar-check"></i> Reserve a Table</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="background: var(--surface-2);">
+      <div class="container">
+        <div class="section-head" data-aos="fade-up" data-aos-duration="800">
+          <span class="section-tag">Wine & Dine</span>
+          <h2 class="section-title">Perfect Pairings</h2>
+          <p class="section-subtitle">Explore our curated wine list featuring the best from around the world.</p>
+        </div>
+        
+        <div class="wine-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;">
+          <div class="wine-card" style="background: var(--surface); padding: 2rem; border-radius: 24px; text-align: center; box-shadow: var(--shadow);" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
+            <div class="wine-icon"><i class="fas fa-wine-bottle fa-3x" style="color: var(--accent-dark);"></i></div>
+            <h3 style="color: var(--accent-dark); margin-top: 0.8rem;">Red Collection</h3>
+            <p style="color: var(--muted);">Bold Cabernets and elegant Pinot Noirs from Napa and Bordeaux.</p>
+          </div>
+          <div class="wine-card" style="background: var(--surface); padding: 2rem; border-radius: 24px; text-align: center; box-shadow: var(--shadow);" data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">
+            <div class="wine-icon"><i class="fas fa-wine-glass-alt fa-3x" style="color: var(--accent-dark);"></i></div>
+            <h3 style="color: var(--accent-dark); margin-top: 0.8rem;">White Selection</h3>
+            <p style="color: var(--muted);">Crisp Chardonnays and refreshing Sauvignon Blancs from coastal vineyards.</p>
+          </div>
+          <div class="wine-card" style="background: var(--surface); padding: 2rem; border-radius: 24px; text-align: center; box-shadow: var(--shadow);" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300">
+            <div class="wine-icon"><i class="fas fa-champagne-glasses fa-3x" style="color: var(--accent-dark);"></i></div>
+            <h3 style="color: var(--accent-dark); margin-top: 0.8rem;">Sparkling & Rosé</h3>
+            <p style="color: var(--muted);">Celebrate with premium Champagnes and delightful Rosé wines.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col" data-aos="fade-up" data-aos-duration="600">
+          <h4><i class="fas fa-anchor"></i> GRAND HARBOR</h4>
+          <p>Where luxury meets the coast.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+        <div class="footer-col" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
+          <h5>Quick Links</h5>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="rooms.html">Rooms</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
+          <h5>Contact</h5>
+          <p><i class="fas fa-phone"></i> <a href="tel:+254715683816">+254 715 683 816</a></p>
+          <p><i class="fas fa-envelope"></i> <a href="mailto:reservations@grandharbor.com">reservations@grandharbor.com</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom" data-aos="fade-up" data-aos-duration="500">
+        <p>© <span id="year"></span> Grand Harbor. Dinner reservations welcomed.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== BACK TO TOP ===== -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- ===== SCRIPTS ===== -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
